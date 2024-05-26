@@ -4,9 +4,10 @@ class LocationsController < ApplicationController
   # GET /locations or /locations.json
   def index
     if params[:place].present?
-      @locations = Location.near(params[:place], params[:distance] || 10, order: :distance)
+      #@locations = Location.near(params[:place], params[:distance] || 10, order: :distance)
+      @pagy, @locations = pagy((Location.near(params[:place], params[:distance] || 10, order: :distance)), items: 3)
     else
-      @locations = Location.all
+      @pagy, @locations = pagy((Location.all), items: 3)
     end
   end
 
