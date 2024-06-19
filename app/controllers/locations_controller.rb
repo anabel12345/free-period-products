@@ -1,16 +1,16 @@
 class LocationsController < ApplicationController
   before_action :set_location, only: %i[ show edit update ]
+  invisible_captcha only: [:create, :update]
 
   # GET /locations or /locations.json
   def index
     if params[:place].present?
-      #@locations = Location.near(params[:place], params[:distance] || 10, order: :distance)
-      @pagy, @locations = pagy((Location.near(params[:place], params[:distance] || 10, order: :distance)), items: 3)
+      @pagy, @locations = pagy(Location.near(params[:place], params[:distance] || 10, order: :distance), items: 3, max_pages: 20)
     else
-      @pagy, @locations = pagy((Location.all), items: 3)
+      @pagy, @locations = pagy(Location.all, items: 3)
     end
   end
-
+  
   # GET /locations/1 or /locations/1.json
   def show
   end
