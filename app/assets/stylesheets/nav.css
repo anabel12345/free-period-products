@@ -5,8 +5,9 @@ ul#nav{
     background: rgba(0,0,0,1);
     justify-content: flex-end;
     gap:16px;
-    height:70px;
+    min-height:70px;
     /* position:fixed; */
+    flex-wrap:wrap;
     padding-right:16px;
   }
 
