@@ -1,0 +1,28 @@
+
+ul#nav{
+    display:flex;
+    width:100vw;
+    background: rgba(0,0,0,1);
+    justify-content: flex-end;
+    gap:16px;
+    height:70px;
+    /* position:fixed; */
+    padding-right:16px;
+  }
+
+  ul#nav li{
+    list-style-type: none;
+
+  }
+
+ul#nav li a{
+    width:60px;
+    padding:15px;
+    border-radius:6px;
+    background-color: #8fbdeb;
+    text-decoration: none;
+  }  
+
+ul#nav li{
+  margin-top:25px;
+}

@@ -1,10 +1,16 @@
+<%= stylesheet_link_tag "style", media: "all" %>
+<ul id="nav">
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'About', about_path %></li>
+    <li><%= link_to 'Contact', contact_path %></li>
+    <li><%= link_to 'View locations', locations_path %></li>
+</ul>
 
-<%= link_to 'Home', root_path %>
-<br>
-<%= link_to 'About', about_path %>
-<br>
-<%= link_to 'Contact', contact_path %>
-<br>
-<%= link_to 'View locations', locations_path %>
-<br>
-This is the home page
+
+
+<!--<%= image_tag 'background.webp', alt: 'Logo', class: 'background' %>-->
+<div class="overlay"></div>
+<div class="overlay-text">
+<h1>Find Free Period Products Near You</h1>
+<p>Our mission is to make period products accessible to everyone. Go to the Locations tab to search our database to find locations offering free period products in your area.</p>
+</div>
