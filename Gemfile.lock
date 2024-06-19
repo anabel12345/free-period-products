@@ -113,6 +113,8 @@ GEM
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
+    invisible_captcha (2.3.0)
+      rails (>= 5.2)
     io-console (0.7.2)
     irb (1.13.1)
       rdoc (>= 4.0.0)
@@ -247,6 +249,7 @@ DEPENDENCIES
   debug
   geocoder (~> 1.8)
   importmap-rails
+  invisible_captcha
   jbuilder
   pagy (~> 8.4)
   pg (~> 1.1)

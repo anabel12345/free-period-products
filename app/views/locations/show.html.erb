@@ -1,6 +1,18 @@
+
+
 <p style="color: green"><%= notice %></p>
 
 <%= render @location %>
+
+<div id="map-container">
+  <div id="location-info"
+    data-latitude="<%= @location.latitude %>"
+    data-longitude="<%= @location.longitude %>">
+  </div>
+  <div id="map" style="height: 400px; width: 100%;">
+</div>
+</div>
+
 
 <div>
   <%= link_to "Edit this location", edit_location_path(@location) %> |
@@ -8,3 +20,5 @@
 
  <!-- <%= button_to "Destroy this location", @location, method: :delete %>-->
 </div>
+
+

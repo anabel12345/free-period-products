@@ -1,5 +1,12 @@
 <p style="color: green"><%= notice %></p>
-
+<%= link_to 'Home', root_path %>
+<br>
+<%= link_to 'About', about_path %>
+<br>
+<%= link_to 'Contact', contact_path %>
+<br>
+<%= link_to 'View locations', locations_path %>
+<br>
 <h1>Locations</h1>
 
 <%= form_with url: locations_path, method: :get do |form| %>
@@ -12,13 +19,12 @@
   <% @locations.each do |location| %>
     <%= render location %>
     <p>
-      <%= link_to "Show this location", location %>
+      <%= link_to "Show this listing", location %>
     </p>
   <% end %>
 </div>
 
+<!-- Pagy navigation bar -->
 <%== pagy_nav(@pagy) %>
 
 <%= link_to "New location", new_location_path %>
-
-
