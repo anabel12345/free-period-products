@@ -1,4 +1,5 @@
 class LocationsController < ApplicationController
+
   before_action :set_location, only: %i[ show edit update ]
   invisible_captcha only: [:create, :update]
 
@@ -26,6 +27,7 @@ class LocationsController < ApplicationController
 
   # POST /locations or /locations.json
   def create
+
     @location = Location.new(location_params)
 
     respond_to do |format|
@@ -72,4 +74,7 @@ class LocationsController < ApplicationController
     def location_params
       params.require(:location).permit(:name, :street, :city, :state, :directions, :latitude, :longitude, :country)
     end
+  
+   
+   
 end
