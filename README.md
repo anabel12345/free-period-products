@@ -4,7 +4,7 @@
 - (optional) install `frum` or `asdf` for ruby version control 
 - install ruby with version: `3.2.2`
 - clone repo
-  ```bash
+```bash
 git clone https://github.com/anabel12345/free-period-products
 ```
 - install dependencies
