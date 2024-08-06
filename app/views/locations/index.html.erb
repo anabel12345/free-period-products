@@ -1,5 +1,6 @@
 <%= stylesheet_link_tag "style", media: "all" %>
 <%= stylesheet_link_tag "locations", media: "all" %>
+<%= stylesheet_link_tag "form-style", media: "all" %>
 
 <style>
   nav.pagy a{
@@ -18,14 +19,12 @@
 
 
 <div class="main">
+<div id = "search-form">
 <%= form_with url: locations_path, method: :get do |form| %>
-  <p>Location</p>
-  <%=form.text_field :place, value: params[:place], placeholder: "Put Location Here!"%>
-  <p>Distance (miles)</p>
-  <%=form.select :distance, [1,5,10,50,100,200,300]%>
+  <%=form.text_field :place, value: params[:place], placeholder: "Input location to search for products nearby!", class:"address_input"%>
   <%=form.submit %>
   <% end %>
-
+</div>
 <div id="locations">
   <% @locations.each do |location| %>
     <div class="location">
