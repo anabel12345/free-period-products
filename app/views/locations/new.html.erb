@@ -1,15 +1,12 @@
-<style>
-  body{
-    padding3:20px
-  }
-</style>
+<%= stylesheet_link_tag "add-locations-form", media: "all" %>
 
-<h1>New location</h1>
+<main class = "new_location_form">
+<h1>Submit a location to our database</h1>
 
 <%= render "form", location: @location %>
-
+</div>
 <br>
 
-<div>
-  <%= link_to "Back to locations", locations_path %>
+<main>
+  <%= link_to "View all locations", locations_path %>
 </div>

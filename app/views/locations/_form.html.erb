@@ -14,36 +14,40 @@
 
   <div>
     <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, placeholder: "ex. Greenburg Library"  %>
   </div>
 
   <div>
     <%= form.label :street, style: "display: block" %>
-    <%= form.text_field :street %>
+    <%= form.text_field :street, placeholder: "ex. 1465 Concert Way" %>
   </div>
 
   <div>
     <%= form.label :city, style: "display: block" %>
-    <%= form.text_field :city %>
+    <%= form.text_field :city, placeholder: "ex. Greenburg" %>
   </div>
 
   <div>
     <%= form.label :state, style: "display: block" %>
-    <%= form.text_field :state %>
+    <%= form.text_field :state, placeholder: "ex. Kansas" %>
   </div>
+
+  <div>
+  <%= form.label :country, style: "display: block"  %>
+  <%= form.text_field :country, placeholder: "ex. United States" %>
+</div>
 
   <div>
     <%= form.label :directions, style: "display: block" %>
-    <%= form.text_field :directions %>
+    <%= form.text_field :directions, placeholder: "ex. In all restrooms" %>
   </div>
 
 
-  <div>
-    <%= form.label :country, style: "display: block" %>
-    <%= form.text_field :country %>
-  </div>
+ 
 
-  <div>
-    <%= form.submit %>
+  <div id="submit">
+  <%=form.submit "Submit"%>
+  
+    
   </div>
 <% end %>
