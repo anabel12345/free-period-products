@@ -1,21 +1,24 @@
 #search-form{
-    
+    background-image: url('/assets/images/search.png');
+    width:70%;
+    padding:50px;
+    margin:auto;
 }
 
 #search-form form{
-    width:70%;
+  
     display:flex;
     justify-content: center;
-    padding:50px;
+   position:relative;
     gap:20px;
     flex-wrap:wrap;
-    margin:auto;
+    
 }
 
 #search-form .address_input{
     /* min-width:900px; */
     font-size:20px;
-    height: 36px;
+    height: 46px;
     border-radius: 4px;
     padding-left: 12px;
     font-size: 14px;
@@ -39,4 +42,36 @@
 
 #search-form #distance_input{
 background-color: blue;
+}
+
+
+
+/* The search button image is layered on top of the actual image */
+
+
+
+
+#search-form #submit_location{
+    background-image: url('/assets/images/search.png');
+    
+}
+
+#search-form form img, #search-form form input#submit_location{
+    position:absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    width:46px;
+}
+#search-form form img{
+    width:32px;
+    height:32px;
+   margin-right:7px;
+   margin-top:7px;
+   cursor:pointer;
+}
+
+#search-form form input#submit_location{
+    background-color: rgba(0,0,0,0);
+    z-index: 1000;
 }

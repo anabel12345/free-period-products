@@ -22,7 +22,8 @@
 <div id = "search-form">
 <%= form_with url: locations_path, method: :get do |form| %>
   <%=form.text_field :place, value: params[:place], placeholder: "Input location to search for products nearby!", class:"address_input"%>
-  <%=form.submit %>
+  <%=form.submit "", id:"submit_location" %>
+  <%=image_tag("search.png")%>
   <% end %>
 </div>
 <div id="locations">
