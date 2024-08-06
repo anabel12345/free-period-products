@@ -25,23 +25,18 @@ img.background{
 }
 
 div.overlay-text{
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(0,0,0,0.6);
   position:absolute;
   top:45%;
   width:100vw;
-  padding:16px;
+  padding:36px;
+  font-size:20px;
   text-align:center;
+  padding-right:70px;
+  padding-left:70px;
 }
 h1{
   margin-bottom:10px;
+  font-size:40px;
 }
 
-div.overlay{
-  background-color: rgba(0,0,0,0.5);
-  position:absolute;
-  z-index: -1;
-  width:100vw;
-  height:100vh;
-  top:0;
-  left:0;
-}
