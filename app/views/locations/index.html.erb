@@ -34,7 +34,17 @@
       <!--<%= link_to "Show this listing", location %>-->
     </p>
     <%= image_tag 'blood.png', class: 'blood-graphic' %>
+    <p class = "distance">
+      <% if params[:place].present? %>
+      <%= location.distance.round(2) %> miles
+    <% end %>
+
+    
+ 
+
+
     </div>
+
   <% end %>
 </div>
 
