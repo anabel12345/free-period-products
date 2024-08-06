@@ -18,7 +18,11 @@
     position:relative;
 }
 
-
+@media only screen and (max-width: 400px) {
+    #locations .location{
+        min-width:300px;
+    }
+}
 #locations .location .name{
     font-size:2em;
     margin-bottom:6px;

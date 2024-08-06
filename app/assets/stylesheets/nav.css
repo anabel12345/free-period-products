@@ -2,7 +2,7 @@
 ul#nav{
     display:flex;
     width:100vw;
-    background: rgba(0,0,0,1);
+    background: rgba(0,0,0,0.8);
     justify-content: flex-end;
     gap:16px;
     min-height:70px;
@@ -13,15 +13,17 @@ ul#nav{
 
   ul#nav li{
     list-style-type: none;
+    color:white;
 
   }
 
 ul#nav li a{
     width:60px;
-    padding:15px;
+    padding:8px;
     border-radius:6px;
-    background-color: #8fbdeb;
+    /* background-color: #8fbdeb; */
     text-decoration: none;
+    color:rgb(245, 211, 225);
   }  
 
 ul#nav li{
