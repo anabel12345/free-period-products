@@ -35,3 +35,10 @@
     right: 25px;
     top:30px;
 }
+
+
+#locations .location .distance{
+    position:absolute;
+    right:25px;
+    bottom:25px;
+}
