@@ -18,7 +18,6 @@
 
 
 <div class="main">
-<h1>Locations</h1>
 <%= form_with url: locations_path, method: :get do |form| %>
   <p>Location</p>
   <%=form.text_field :place, value: params[:place], placeholder: "Put Location Here!"%>
@@ -29,11 +28,13 @@
 
 <div id="locations">
   <% @locations.each do |location| %>
+    <div class="location">
     <%= render location %>
     <p>
-      <%= link_to "Show this listing", location %>
+      <!--<%= link_to "Show this listing", location %>-->
     </p>
-    <br><br>
+    <%= image_tag 'blood.png', class: 'blood-graphic' %>
+    </div>
   <% end %>
 </div>
 
