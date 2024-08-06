@@ -8,7 +8,7 @@ class LocationsController < ApplicationController
     if params[:place].present?
       @pagy, @locations = pagy(Location.near(params[:place], 300, order: :distance), items: 8, max_pages: 10)
     else
-       @pagy, @locations = pagy(Location.all, items: 3, max_pages: 10)
+       @pagy, @locations = pagy(Location.all, items: 5, max_pages: 10)
     end
   end
   
