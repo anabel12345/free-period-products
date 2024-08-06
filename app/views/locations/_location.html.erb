@@ -1,36 +1,23 @@
-<div id="<%= dom_id location %>">
-  <p>
-    <strong>Name:</strong>
+<div id="<%= dom_id location %>" >
+  <p class = "name">
     <%= location.name %>
   </p>
 
-  <p>
-    <strong>Street:</strong>
-    <%= location.street %>
+  <p class = "address">
+    <%= location.street %>  <%= location.city %>, <%= location.state %>, <%= location.country %>
   </p>
 
-  <p>
-    <strong>City:</strong>
-    <%= location.city %>
-  </p>
-
-  <p>
-    <strong>State:</strong>
-    <%= location.state %>
-  </p>
-
-  <p>
+  <p class = "directions">
     <strong>Directions:</strong>
     <%= location.directions %>
   </p>
 
   
 
-  
-  <p>
-    <strong>Country:</strong>
-    <%= location.country %>
+
   </p>
+  
+
 
 </div>
 

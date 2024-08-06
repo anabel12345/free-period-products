@@ -1,4 +1,59 @@
-.main{
+#locations{
     margin:20px;
+    /* background-color:green; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
+#locations .location{
+    margin:10px;
+    /* background-color: blue; */
+    max-width:90%;
+    min-width:70%;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    padding:25px;
+    margin:5px;
+    position:relative;
+}
+
+@media only screen and (max-width: 400px) {
+    #locations .location{
+        min-width:300px;
+    }
+}
+#locations .location .name{
+    font-size:2em;
+    margin-bottom:6px;
+}
+
+
+#locations .location .directions{
+    margin-top:16px;
+}
+
+#locations .location .blood-graphic{
+    max-width:35px;
+    position:absolute;
+    right: 25px;
+    top:30px;
+}
+
+
+#locations .location .distance{
+    position:absolute;
+    right:25px;
+    bottom:25px;
+}
+
+
+
+
+nav.pagy{
+    width:70%;
+    margin:auto;
+    padding:30px;
+}
+
 
