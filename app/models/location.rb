@@ -14,16 +14,6 @@ class Location < ApplicationRecord
     end
     
 
-      # reverse_geocoded_by :latitude, :longitude do |obj, results|
-      #   geo = results.first
-      #   if geo
-      #     obj.name    = geo.address
-      #     obj.street  = geo.address.split(',').first
-      #     obj.city    = geo.city
-      #     obj.state   = geo.state
-      #     obj.country = geo.country_code
-      #   end
-      # end
       def ensure_latitude_and_longitude_prescense
         if latitude.nil? || longitude.nil?
           errors.add(:base, "We don't think this is a real location. If this is a mistake, please contact the developers!")
