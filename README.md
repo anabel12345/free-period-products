@@ -1,6 +1,6 @@
 #  Free Period Products
 
-Live Link: [FreePeriodProducts]([https://pages.github.com/](https://free-period-products.onrender.com/locations))
+Live Link: [FreePeriodProducts](https://free-period-products.onrender.com/locations)
 
 ## Setup dev environment
 - (optional) install `frum` or `asdf` for ruby version control 
