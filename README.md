@@ -1,5 +1,7 @@
 #  Free Period Products
 
+Live Link: free-period-products.onrender.com/locations
+
 ## Setup dev environment
 - (optional) install `frum` or `asdf` for ruby version control 
 - install ruby with version: `3.2.2`
