@@ -1,6 +1,6 @@
 class LocationsController < ApplicationController
 
-  before_action :set_location, only: %i[ show edit update ]
+  before_action :set_location, only: %i[ show edit ]
   invisible_captcha only: [:create, :update]
 
   # GET /locations or /locations.json
@@ -41,36 +41,14 @@ class LocationsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /locations/1 or /locations/1.json
-  def update
-    respond_to do |format|
-      if @location.update(location_params)
-        format.html { redirect_to location_url(@location), notice: "Location was successfully updated." }
-        format.json { render :show, status: :ok, location: @location }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @location.errors, status: :unprocessable_entity }
-      end
-    end
-  end
 
-  # # DELETE /locations/1 or /locations/1.json
-  # def destroy
-  #   @location.destroy!
-
-  #   respond_to do |format|
-  #     format.html { redirect_to locations_url, notice: "Location was successfully destroyed." }
-  #     format.json { head :no_content }
-  #   end
-  # end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_location
       @location = Location.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
+    # Only allow trusted parameters through.
     def location_params
       params.require(:location).permit(:name, :street, :city, :state, :directions, :latitude, :longitude, :country)
     end
