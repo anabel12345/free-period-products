@@ -1,7 +1,7 @@
 class LocationsController < ApplicationController
 
   before_action :set_location, only: %i[ show edit ]
-  invisible_captcha only: [:create, :update]
+  invisible_captcha only: [:create]
 
   # GET /locations or /locations.json
   def index
