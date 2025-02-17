@@ -1,7 +1,7 @@
 #search-form{
     background-image: url('/assets/images/search.png');
-    width:70%;
-    padding:50px;
+    width:100%;
+    padding:20px 0px;
     margin:auto;
 }
 
