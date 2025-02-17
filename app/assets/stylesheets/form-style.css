@@ -3,6 +3,7 @@
     width:100%;
     padding:20px 0px;
     margin:auto;
+    max-width:80vw;
 }
 
 #search-form form{
