@@ -46,7 +46,11 @@
     bottom:25px;
 }
 
-
+#locations .location .distance{
+    position:absolute;
+    right:25px;
+    bottom:25px;
+}
 
 
 nav.pagy{
@@ -56,3 +60,10 @@ nav.pagy{
 }
 
 
+
+
+@media only screen and (max-width: 600px) {
+    #locations .location .blood-graphic{
+        display:none;
+    }
+  }
