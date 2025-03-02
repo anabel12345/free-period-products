@@ -69,3 +69,4 @@ end
 gem "geocoder", "~> 1.8"
 gem 'pagy', '~> 8.4' 
 gem 'invisible_captcha'
+gem 'dotenv-rails'
