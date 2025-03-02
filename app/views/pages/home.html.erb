@@ -1,4 +1,6 @@
 <%= stylesheet_link_tag "style", media: "all" %>
+<script async src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['PLACES_API'] %>&loading=async&libraries=places&callback=initAutocomplete"></script>
+
 <ul id="nav">
     <li><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'About', about_path %></li>
@@ -17,9 +19,21 @@
         <p>Search for locations that provide free period products in your area.</p>
         <div id = "search-form">
         <%= form_with url: locations_path, method: :get do |form| %>
-        <%=form.text_field :place, value: params[:place], placeholder: "Input location to search for products nearby!", class:"address_input"%>
+        <%=form.text_field :place, value: params[:place], placeholder: "Input location to search for products nearby!", class:"address_input", id:"autocomplete"%>
         <%=form.submit "", id:"submit_location" %>
         <%=image_tag("search.png")%>
         <% end %>
 </div>
+
 </div>
+
+
+<script>
+        let autocomplete;
+        function initAutocomplete() {
+            autocomplete = new google.maps.places.Autocomplete(
+                document.getElementById('autocomplete'),
+        );
+           
+        }
+</script>
